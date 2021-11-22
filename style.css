@@ -1,0 +1,29 @@
+.game-container {
+  width: 600px;
+  height: 600px;
+  border: 1px solid red;
+}
+
+.all-rows {
+  width: 120px;
+  height: 28px;
+  background-color: lightskyblue;
+  border: 1px solid black;
+  position: relative;
+}
+/* 
+@keyframes slide {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 480px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.sliding {
+  animation: slide 4s infinite linear;
+} */
