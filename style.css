@@ -10,8 +10,12 @@
   background-color: lightskyblue;
   border: 1px solid black;
   position: relative;
+  /* visibility: hidden; */
 }
-/* 
+
+
+/* https://www.youtube.com/watch?v=qQfIjRjZpx0 
+sliding animation */
 @keyframes slide {
   0% {
     left: 0px;
@@ -26,4 +30,5 @@
 
 .sliding {
   animation: slide 4s infinite linear;
-} */
+}
+
