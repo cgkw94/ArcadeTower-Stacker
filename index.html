@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Arcade Tower Stacker</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="#instructions">
+    <div class="instructions">
       <h2>Goal</h2>
       <p>Build a tower that reaches all the way to the top!</p>
     </div>
 
-    <div class="game-container"></div>
-    <button id="stop-btn">STOP 1</button>
-    <button id="stop-btn2">STOP 2</button>
+    <div class="game">
+      <div id="score-list">
+        <h3>SCORE</h3>
+        <p id="score">0</p>
+      </div>
+      <div class="game-container"></div>
+    </div>
+    <button onclick="stopRow(1)" id="stop-btn">STOP</button>
     <script src="script.js" charset="utfr-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

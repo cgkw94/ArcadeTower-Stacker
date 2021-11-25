@@ -1,27 +1,79 @@
+:root {
+  --width: 480px;
+}
+
+body {
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+}
+
+.instructions {
+  text-align: center;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+h2 {
+  color: #ef4423;
+}
+
+.game {
+  display: inline;
+}
+
+#score-list {
+  float: right;
+  margin-right: 120px;
+  margin-top: 180px;
+  font-family: "Press Start 2P", sans-serif;
+  color: #f421f1;
+  font-size: 20px;
+}
+
+#score {
+  text-align: center;
+}
+
 .game-container {
   width: 600px;
-  height: 600px;
-  border: 1px solid red;
+  height: 559px;
+  border: 10px solid #ef4423;
+  background: #192841;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .all-rows {
   width: 120px;
   height: 28px;
   background-color: lightskyblue;
-  border: 1px solid black;
   position: relative;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
+#row1 {
+  visibility: visible;
+}
 
-/* https://www.youtube.com/watch?v=qQfIjRjZpx0 
-sliding animation */
+#stop-btn {
+  width: 100px;
+  height: 100px;
+  background-color: #4faf44;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 20px 4px #111, inset 0 5px 10px #ddd;
+  transition: all 100ms ease;
+  font-family: "Press Start 2P", sans-serif;
+  display: block;
+  margin: 30px auto;
+}
+
+/* sliding animation */
 @keyframes slide {
   0% {
     left: 0px;
   }
   50% {
-    left: 480px;
+    left: var(--width);
   }
   100% {
     left: 0px;
@@ -29,6 +81,17 @@ sliding animation */
 }
 
 .sliding {
+  animation: slide 5s infinite linear;
+}
+
+.medium-speed {
   animation: slide 4s infinite linear;
 }
 
+.fast-speed {
+  animation: slide 3s infinite linear;
+}
+
+.fastest-speed {
+  animation: slide 1s infinite linear;
+}
