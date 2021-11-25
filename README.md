@@ -20,5 +20,5 @@ The win condition is not working as intended at the moment.
 
 ### Credits
 
-[Google Web Fonts - Press Start 2P](http://google.com/fonts)
-[SweetAlert2](https://sweetalert2.github.io/)
+- [Google Web Fonts - Press Start 2P](http://google.com/fonts)
+- [SweetAlert2](https://sweetalert2.github.io/)
