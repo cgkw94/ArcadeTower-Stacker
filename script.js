@@ -66,6 +66,9 @@ const stopRow = (row) => {
 
   //player miss stack
   if (leftDifference < -currentWidth || leftDifference > currentWidth) {
+    //hide score
+    document.querySelector("#score").style.visibility = "hidden";
+    //lose alert
     Swal.fire({
       title: "YOU LOSE!",
       text: `Score: ${counter}`,
@@ -98,7 +101,6 @@ const stopRow = (row) => {
   counter++;
   //update score in html
   document.querySelector("#score").innerText = counter;
-
 
   //player win
   if (
