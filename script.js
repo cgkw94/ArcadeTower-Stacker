@@ -89,12 +89,12 @@ const stopRow = (row) => {
     //extends the animation so it fits in game-container
     rowWidth = rowWidth + absLeftDifference;
     if (currentRow != document.querySelector("#row1")) {
-      document.documentElement.style.setProperty("--width", rowWidth + "px");
+      document.documentElement.style.setProperty("--width", `${rowWidth}px`);
     }
   }
 
   //re-assign function & button to above row
-  let aboveRowClick = "stopRow(" + (row + 1) + ")";
+  let aboveRowClick = `stopRow(${row + 1})`;
   document.querySelector("#stop-btn").setAttribute("onclick", aboveRowClick);
 
   //track score
